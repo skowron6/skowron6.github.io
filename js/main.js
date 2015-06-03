@@ -63,7 +63,7 @@ window.signature = {
 
 $(document).ready(function() {
   window.signature.initialize();
-  return $('button').on('click', function() {
+  return $('#rerun').on('click', function() {
     window.signature.initialize();
     return setTimeout(function() {
       return window.signature.animate();

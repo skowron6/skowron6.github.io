@@ -100,13 +100,16 @@ textarea {
     
 }
 
-
-#intro-svg-text {
+.full-page-section > .wrapper {
     width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#intro-svg-text {
+    margin: 10% 0;
 }
 
 #intro-svg-text path {
@@ -115,7 +118,19 @@ textarea {
     stroke-width: 1;
 }
 
+#rerun {
+    color: #ffffff;
+    cursor: pointer;
+}
 
+#rerun:hover {
+    animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    from    {transform: rotate(0deg);}
+    to      {transform: rotate(360deg);}
+}
 
 
 
